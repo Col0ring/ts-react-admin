@@ -1,0 +1,42 @@
+.header {
+  height: 80px;
+  background-color: #fff;
+  .header-top {
+    text-align: right;
+    line-height: 40px;
+    padding-right: 30px;
+    height: 40px;
+    border-bottom: 1px solid #1da57a;
+  }
+
+  .header-bottom {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    .header-bottom-left {
+      position: relative;
+      width: 25%;
+      text-align: center;
+      font-size: 20px;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 20px solid;
+        border-color: #fff transparent transparent transparent;
+      }
+    }
+    .header-bottom-right {
+      width: 75%;
+      text-align: right;
+      margin-right: 30px;
+      img {
+        margin: 0 15px;
+        width: 30px;
+        height: 20px;
+      }
+    }
+  }
+}
